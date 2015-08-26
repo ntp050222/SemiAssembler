@@ -1,0 +1,9 @@
+\graphicspath{ {Chapters/images/} }
+\chapter{Conclusion and Future Work}
+\section{Conclusion}
+In recent years, several reference-mapping approaches detect only small-sized or large-sized structural variants(SVs) and only report locus of SVs. {\em De novo} assembly has the advantage of assembling SVs but the genomes assembled are often fragmented into large numbers of contigs.
+
+In this paper, we design a semi-assembly approach called SemiAssembler which integrate reference-mapping approaches and {\em de novo} assembly to reconstruct a newly-sequenced genome using closely-related reference genome. We can generate a draft genome with large-sized insertions and deletions, and then we replace draft genome sequence with contigs to reflect inter-species SNPs and small-sized indels. The results of assembled newly-sequenced genome indicate that the genome assembled not only provides better contiguity but also uncover a substantial amount of inter-species variations.
+
+\section{Future Work}
+We can not find all insertions and deletions in our method because the number of breakpoint reads is less than the default threshold. The default threshold is set by average coverage, so the variance between coverages is a big issue.
